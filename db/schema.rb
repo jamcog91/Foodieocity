@@ -24,8 +24,7 @@ ActiveRecord::Schema.define(version: 2023_01_24_160703) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "restaurant_id"
-    t.integer "customer_id"
+   
     t.integer "star_rating"
     t.string "review"
     t.index ["customer_id"], name: "index_reviews_on_customer_id"
