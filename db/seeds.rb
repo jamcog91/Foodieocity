@@ -1,9 +1,10 @@
 puts "Deleting Restaurant/Customer data..."
 Restaurant.destroy_all
 Customer.destroy_all
+Review.destroy_all
 
 puts "creating new restaurant..."
-dudlys = Restaurant.create(name: "Dudley's", address: "85 Orchard Street, New York, NY 10002", price: "2")
+dudlys = Restaurant.create(name: "Dudley's", address: "85 Orchard Street, New York, NY 10002", price: "2", img_url: 'https://images.squarespace-cdn.com/content/v1/580d0f6503596e879431e364/1614998640002-VON35193XR7UYYA2CS45/2019_09_27_Dudleys_+69_%C2%A9NicoSchinco.jpg?format=1000w' )
 buchers_daughter = Restaurant.create(name: "The Bucher's Daughter", address: "19 Kenemare St, New York, NY 10012", price: "2")
 peasant = Restaurant.create(name: "Peasant", address: "194 Elizabeth St, New York, NY 10012", price: "3")
 jacks_wife_freda = Restaurant.create(name: "Jack's Wife Freda", address: "266 Lafyette St, New York, NY 10012", price: "2")
